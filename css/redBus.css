@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+}
+
+#headerBlock {    /*Parent*/
+    /*background: floralwhite;*/
+    width: 100%;   
+    z-index: 1;
+    position: fixed;
+    background-color: #d84f57;                  
+}
+
+#headerBlock .container {
+    /*background: #fff;*/
+    display: flex;
+    width: 1200px;
+    margin: 0px auto;
+    height: 55px;
+    align-items: center;
+}
+
+#headerBlock .container .leftNav {
+    /*background: yellowgreen;*/
+    flex: 1;
+}
+
+#headerBlock .container .rightNav {
+    /*background: tomato;*/
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*slider block css starts here */ 
+
+#sliderBlock {
+    position: relative; /*1stOR2nd#sliderBlock margin-top:-55px*/
+    top: -5px;
+    left: 0;
+    /*width: 100%;*/
+} 
+#sliderBlock img {
+    width: 100%;
+    height: 450px;
+}
+
+/*--left menu block--------*/
+.leftNav section {
+    display: flex;
+}
+.leftNav ul,        /*comma is seperator*/
+.rightNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.leftNav ul li a,
+.rightNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 17px;
+    font-size: 13px;
+    display: inline-block;
+    font-family: Montserrat;
+}
+.logo  {
+    flex: 1;
+
+}
+.leftmenu {
+    flex: 8;
+}
+.logo a {
+    background-image: url('../images/logo.png');
+    width: 80px;
+    height: 49px;
+    display: flex;
+    text-indent: -9999px;
+}
+.leftNav ul li a.active {
+    font-weight: 600;
+    border-bottom: 3px solid #fff; /*border-type:groove,dotted*/
+    transition: ease-in-out 0.6s;
+}
+.leftNav ul li a:hover {
+     color: #f9e7ea;
+}
+.fa-user-circle {
+    font-size: 33px;
+    font-weight: lighter;
+    line-height: 15px;
+    margin-right: 5px;
+}
+.rightNav ul li a {
+    padding: 10px !important;  /*Priority*/
+    
+}
+.fa-chevron-down {
+    margin: 0px 0px 0 6px;
+}
+.after_user_circle {
+    margin: -24px 21px 0 41px !important;
+    display: block;
+}
+
+
+#searchBusesBlock article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    position: relative;
+    top: 26px;
+}
+
+#sliderBlock {
+    background-image: url('../images/safetyplus1.png');
+    background-position: top; /*Advanced level*/
+    background-repeat: no-repeat;
+    width: 100%; 
+    background-size: cover;
+    margin-top: 5px;
+}
+
+/*---Attribute selector--used to select elements with a specific attribute and value*/
+
+input[type="date"] {  /*can use whichever class,style depending upon ur attribute name*/
+    font-size: 11px;
+    padding: 13px 30px !important;
+    border-right: none !important;
+}
+
+/*--broad border--*/
+#sliderBlock article input {
+    padding: 13px 28px 16px 39px;
+    border: none;
+    border-right: 1.3px solid #888;
+    box-sizing: border-box;
+}
+
+#sliderBlock article button {
+    height: 46px;
+    width: 144px;
+    background: #d74f57;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.city_icon {
+    position: relative;
+}
+.city_icon i {
+    position: absolute;
+    top: -14px;
+    left: 6px;
+    font-size: 20px;
+}
+
+/*---latest update block here-----*/
+#latestUpdateBlock {
+    display: flex;/*how to make center*/
+    justify-content: center;
+    
+}
+/*how to make this background color*/
+#latestUpdateBlock article {
+          width: 530px;
+          height: 100px;
+          padding: 10px 20px 10px 20px;
+          box-sizing: border-box;
+          background-color: #fff5e5;
+          display: flex;
+          align-items: center;
+          margin-top: -40px;
+          position: relative;/*dont overlap*/
+}
+
+/*use div(Pseudo selector) change h4 p*/
+#latestUpdateBlock article div:nth-child(1) {
+    flex: 2;
+}
+#latestUpdateBlock article div:nth-child(2) {
+    flex: 10;
+}
+#latestUpdateBlock article div:nth-child(3) {
+    flex: 4;
+   /*how to make bottom register*/
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    height: 80px;
+}
+
+/*how to increase font size bell icon */
+#bell-on {
+    color: #d74f57;
+    font-size: 45px;
+}
+/*.fal fa-bell i {
+    color: #d74f57;
+    font-size: 45px;
+}*/
+
+
+/*latestupdateblock change h4*/
+#latestUpdateBlock article h4 {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*latestupdateblock change paragraph*/
+#latestUpdateBlock article p {
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+    font-weight: lighter;/*if u want font lighter*/
+}
+
+#latestUpdateBlock article button {
+    width: 120px;
+    height: 25px;
+    border-radius: 2px;
+    text-transform: uppercase; /**/
+    color: #fff;
+    background-color: #d74f57;
+    border: none;
+    font-weight: bold; /*font ko bold karna*/
+    margin: 0; /*box increase*/
+    padding: 4px;
+    font-size: 12px;
+}
+
+/*-----------------OnTimeBlock css blocks starts here---------------*/
+
+/*ADJACENT SELECTOR-- (>) it is checking first child */
+
+#OnTimeBlock > article {   /*leftright---- move to right*/
+    width: 1200px;
+    border: 1px solid #cccccc;
+    /*border-radius: 3px;*/
+    background: #fff;
+    margin:60px auto;
+    /*how to make it inline--always depend upon parent*/
+    /*display: flex;*/
+    height: 320px; /*box size increase*/
+}
+
+/*2div--leftright works here */
+.leftOnDiv {
+    flex: 1;
+}
+.leftOnDiv {
+    background: url('../images/ic-shield-red-big.png');
+    height: 88px;
+    width: 88px;
+    background-size: contain; /**/
+    background-repeat: no-repeat; /**/
+    text-indent: -9999px; /*remove intend text*/
+    margin: 20px; /*icon shld be inline*/
+    float: left; /**/
+}
+
+
+.rightOnDiv {
+    flex: 8;
+}
+
+/*-----------main class CSS works here------------*/
+.img3_hero, 
+.img4_Hero {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;/*default*/
+    vertical-align: middle;
+}
+
+.img3_hero {
+    background-image: url('../images/tip-icon.png');
+    width: 24px;
+    height: 24px;
+}
+
+.img4_Hero {
+    background-image: url('../images/otgText.png');
+    width: 156px;
+    height: 26px;
+}
+/*------------footer CSS works here------------*/
+.rightInsidefooter {
+    display: flex;
+    margin: 10px;
+}
+
+.rightInsidefooter div {
+    flex: 1;
+}
+
+/*----CSS color works here=>------h2---------*/
+.rightInsideheader h2 {
+    text-align: left;
+    color: #3e3e52;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 27px;
+}
+/*----CSS color works here=>------h3---------*/
+.rightInsideheader h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: .3px;
+    text-align: left;
+    color: #7e7e8c;
+    margin-top: -15px;
+}
+/*-------------CSS <main> color works-----------*/
+/*.rightInsidemain {
+    
+}*/
+/*---------CSS footer color works-----------*/
+.rightInsidefooter h2,
+.rightInsidefooter h5 {
+    width: 278px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: .3px;
+    text-align: left;
+}
+
+.rightInsidefooter h2 {
+    height: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #1446a0;
+}
+.rightInsidefooter h5 {
+    padding-top: 10px;
+    font-size: 14px;
+    /*font-weight: 400;*/
+    line-height: 0.43;
+    color: #34495e;
+    font-weight: 700;
+}
+.rightInsidefooter p {
+    width: 278px;
+    /*height: 60px;*/
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    /*line-height: 1.43;*/
+    letter-spacing: .3px;
+    color: #34495e;
+    text-align: left;
+}
+/*-----------------OnTimeBlock css blocks ends here---------------*/
+/*------------Adjacent selector----------------------------*/
+#TrackMyBusBlock > article {
+    width: 1200px;
+    border: 1px solid #cccccc;
+    /*border-radius: 3px;*/
+    background: #e8ecef;
+    margin: 60px auto;
+    margin-top: 50px;
+    /*display: flex;*/
+    height: 524px;
+}
+/*---------------------left section CSS-------------*/
+.leftOnTrack {
+    flex: 1;
+}
+.leftOnTrack p {
+    background: url('../images/tmb_img.png');
+    height: 282px;
+    width: 442px;
+    background-size: contain; /*that is default only*/
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    /*margin: 20px;*/
+    margin-left: 71px;
+    margin-top: 26px;
+    float: left; /*?*/
+}
+
+/*----------RIGHT section CSS-----------------------*/
+.rightOnTrack {
+    flex: 8;
+}
+
+/*-----------footer section CSS----------------------*/
+.rightInsideFooter {
+    display: flex;
+    margin: 100px;
+}
+.rightInsideFooter div {
+    flex: 1;
+}
+
+/*----------header section CSS--------------------*/
+.rightInsideheader h2,
+.rightInsideheader p  {
+    margin-left: 80px;
+    float: left;
+    width: 531px;
+}
+
+.rightInsideHeader h2 {
+    height: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 60px;
+    color: #4a4a4a;
+}
+
+.rightInsideHeader p {
+    padding-top: 0px;
+    font-size: 19px;
+    line-height: 1.36;
+    text-align: left;
+    padding-right: 76px;
+    height: 0px;
+    color: #4a4a4a;
+}
+.rightInsideMain {
+    display: inline-block;
+    /*float: left;*/
+    text-decoration: none;
+    padding-top: 90px;
+    width: 130px;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+/*--create button box--section article button--*/
+#TrackMyBusBlock article button {
+    color: #4c8fdb;
+    padding: 10px 17px;
+    /*text-decoration: none;*/
+    border-radius: 2px;
+    border: 1px solid #4c8fdb;
+}
+
+
+
+
+
+
+
+
+/*-------------------TrackMyBusBlock ends-------------------------*/
+/*.test {
+    background: salmon;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #111;
+    color: seashell;
+}
+#relative {
+    position: relative;
+    top: left;
+    left: 100px;
+}
+#absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: sienna;
+}*/
+/*#attrBlock input {
+    background: red;  y it is red becoz element selector 
+}                    even also still o/p is red coz id first
+.green {
+    background: salmon !important; then salmonbcz of priority
+}
+Attribute SELECTOR==> if we remove .green
+input[type="password"] {
+    background: green !important;
+}
+input[type="search"] {
+    background: lightblue !important;
+}*/ 
+/*#display {
+    height: 300px;
+    width: 100px;
+    background: red;
+    color: #fff;
+    display: flex;-- text right side
+    justify-content: flex-end;//horizontal
+    /*justify-content: center;   //centre both
+    justify-content: flex-start; normal position
+    /*align-items: center; :vertical //center both*/
+    /*align-items: flex end
+}*/
+/*.leftNav ul li a.active {
+    border-bottom: 1px groove #fff;
+    transition: ease-in-out 0.6s;
+}*/
+/*#display {
+    background: red;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #111;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display:none;-- it removes white spaces also*/
+    /*visibility:hidden-- hiding--but it dos not remove white space*/
+    /*text-indent: -9999px;--text remove
+    font-size: 0;*/
+}
+/*#cssunit {
+    width: 600px;  or 50% in case of %.
+    /*--pixel is fixed unit(cannot change,, only specially layout purpose)*/
+    /*eg-tab into mobile--cannot change its fixed
+    background: #fff;
+    border: 1px solid red;
+}
+#cssunit parent {
+    width: 10%;
+    background: salmon;
+}*/
+/*nav {
+    background: red ;
+}
+nav {
+    background: rosybrown; OVERRIDE (LATEST ONLY SHOW)
+}OR*/
+/*nav:first-child {
+    background: salmon;
+    color: silver;
+}
+nav:last-child {
+    background-color: seagreen;
+    color: silver;
+}OR*/
+/*nav:nth-child(1) {   ==> CSS:nth-child() Selector
+    background: tomato;
+    color: white;
+}
+nav:nth-child(2) {
+    background: turquoise;
+    color: white;
+}OR*/
+/*nav:nth-child(odd) { ==>if you want table like structure alternate colors
+    background: white;  use odd even concept(CSS Pseudo Selector).
+    color: turquoise;
+    padding: 10px;
+    margin: 10px 0px;
+}
+nav:nth-child(even) {
+    background: #ccc;
+    color: tomato;
+    padding: 10px;
+    margin: 10px 0px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
